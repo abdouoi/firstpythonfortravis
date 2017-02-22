@@ -4,6 +4,7 @@ before_install:
  - sudo apt-get update
  - sudo apt-get install python-opencv
  - sudo dpkg -L python-opencv
+ - ./build.sh
 
 install:
   - "pip install --pre -r requirements.txt"
