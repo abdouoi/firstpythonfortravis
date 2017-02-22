@@ -2,8 +2,6 @@ language: python
 
 before_install:
  - sudo apt-get update
- - sudo apt-get install python-opencv
- - sudo dpkg -L python-opencv
  - conda install -c menpo opencv3=3.2.0
 
 install:
