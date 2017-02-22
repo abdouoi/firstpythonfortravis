@@ -4,12 +4,12 @@ before_install:
  - sudo apt-get update
  - sudo apt-get install python-opencv
  - sudo dpkg -L python-opencv
- - ln -s /home/travis/virtualenv/python3.6.0/lib/python3.6/site-packages/cv2.cpython-36m.so cv2.so
 
 install:
   - "pip install --pre -r requirements.txt"
 
 python:
+  - "2.7"
   - "3.6"
 
 script:
